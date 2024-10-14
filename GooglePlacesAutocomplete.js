@@ -188,6 +188,7 @@ export const GooglePlacesAutocomplete = forwardRef((props, ref) => {
     focus: () => inputRef.current.focus(),
     isFocused: () => inputRef.current.isFocused(),
     clear: () => inputRef.current.clear(),
+    debounceRequest: (text) => debounceData(text),
     getCurrentLocation,
   }));
 
